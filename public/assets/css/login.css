@@ -1,0 +1,430 @@
+/*------------------------------------------*/
+/*	     01 - General & Basic Styles
+/*------------------------------------------*/
+
+@font-face {
+	font-family: 'Gotham Book';
+	font-style: normal;
+	font-weight: normal;
+	src: local('../fonts/Gotham Book'), url('../fonts/GOTHAMBOOK.woff') format('woff');
+}
+body {
+	font-family: 'Gotham Book';
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 300;
+	color: #888;
+	width: 100%;
+	height: 100%;
+	background: url(../images/background-img.jpg) no-repeat center center fixed;
+	background-attachment:fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	outline: none;
+}
+body:after {
+	content: "";
+	position: fixed; /* stretch a fixed position to the whole screen */
+	top: 0;
+	height: 100vh; /* fix for mobile browser address bar appearing disappearing */
+	left: 0;
+	right: 0;
+	z-index: -1; /* needed to keep in the background */
+	background: url(../images/background-img.jpg) center center;
+		background-attachment:fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+strong, b {
+	font-weight: 600;
+}
+::placeholder {
+ color:#a5a5a5!important;
+ opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:#a5a5a5!important;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: #a5a5a5!important;
+}
+::selection {
+	background: #9d9b99; /* WebKit/Blink Browsers */
+	color: #fff;
+}
+::-moz-selection {
+ background: #9d9b99; /* Gecko Browsers */
+ color:#fff;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+ul {
+	list-style: none;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+a {
+	transition: color 0.2s ease-in-out;
+	-moz-transition: color 0.2s ease-in-out;
+	-webkit-transition: color 0.2s ease-in-out;
+	-o-transition: color 0.2s ease-in-out;
+	outline: none;
+	outline: none;
+}
+a:hover {
+	color: #444;
+}
+a, a:hover {
+	text-decoration: none;
+}
+i {
+	font-size: 1.1em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Gotham Book';
+	font-weight: 600;
+	margin: 0;
+	color: #444;
+}
+h1 {
+	font-size: 24px;
+	line-height: 30px;
+}
+h2 {
+	font-size: 22px;
+	line-height: 28px;
+}
+h3 {
+	font-size: 18px;
+	line-height: 24px;
+}
+h4 {
+	font-size: 16px;
+	line-height: 22px;
+}
+h5 {
+	font-size: 14px;
+	line-height: 20px;
+}
+h6 {
+	font-size: 12px;
+	line-height: 18px;
+}
+p {
+	color: #333;
+	font-size: 13px;
+	font-family: 'Gotham Book';
+	line-height: 22px;
+	margin: 0;
+}
+p strong {
+	font-weight: 600;
+}
+img {
+	outline: none;
+}
+.nopadd {
+	padding: 0px!important;
+}
+.btn {
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+}
+.btn-primary {
+	background: #a55339;
+	border: 0px none;
+	border-radius: 0px none;
+	padding: 8px 32px;
+}
+.btn-primary:hover, btn-primary:focus {
+	background: #7d3d29!important;
+	-webkit-border-radius: 0px;
+ --webkit-box-shadow:none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+	outline: none;
+}
+/*************Login Css*****************/
+.tab-bar {
+	background: #f8ddc1;
+	width: 100%;
+}
+.login-background {
+	background: url(../images/background-img.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
+.login-slogan {
+	font-family: 'Gotham Book';
+	font-size: 19pt;
+	font-weight: bold;
+	color: #e6e3de;
+	margin-top: 180px;
+	line-height: 30px;
+	text-shadow: -1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+.login-block {
+	background: #ededed;
+}
+.login-border {
+	width: 100%;
+	height: 20px;
+	background: rgba(66,21,12,1);
+	background: -moz-linear-gradient(left, rgba(66,21,12,1) 0%, rgba(208,129,84,1) 36%, rgba(250,229,204,1) 70%, rgba(152,66,47,1) 100%);
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(66,21,12,1)), color-stop(36%, rgba(208,129,84,1)), color-stop(70%, rgba(250,229,204,1)), color-stop(100%, rgba(152,66,47,1)));
+	background: -webkit-linear-gradient(left, rgba(66,21,12,1) 0%, rgba(208,129,84,1) 36%, rgba(250,229,204,1) 70%, rgba(152,66,47,1) 100%);
+	background: -o-linear-gradient(left, rgba(66,21,12,1) 0%, rgba(208,129,84,1) 36%, rgba(250,229,204,1) 70%, rgba(152,66,47,1) 100%);
+	background: -ms-linear-gradient(left, rgba(66,21,12,1) 0%, rgba(208,129,84,1) 36%, rgba(250,229,204,1) 70%, rgba(152,66,47,1) 100%);
+	background: linear-gradient(to right, rgba(66,21,12,1) 0%, rgba(208,129,84,1) 36%, rgba(250,229,204,1) 70%, rgba(152,66,47,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42150c', endColorstr='#98422f', GradientType=1 );
+}
+.login-block .logo-box {
+}
+.login-block .display-2 {
+	font-size: 14pt;
+	font-weight: 900;
+	color: #8b4513;
+	text-align: center;
+	letter-spacing: -0.3px;
+}
+.login-block .input-group-text {
+	border-bottom: 1px solid #a67856!important;
+	border: 0px none;
+	border-radius: 0px!important;
+}
+.login-block .input-group-text i {
+	font-size: 20px;
+	color: #b0b0b0;
+}
+.login-block .form-control {
+	border: 0px none;
+	border-bottom: 1px solid #a67856;
+	background-color: transparent!important;
+	border-radius: 0px!important;
+	font-size: 10.5pt;
+}
+.login-block .form-control:focus {
+	border: 0px none;
+	border-bottom: 1px solid #a67856;
+	border-radius: 0px!important;
+	font-size: 10.5pt;
+	outline: none;
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+}
+.login-cir {
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	margin: 2px;
+	background: #a55339;
+	line-height: 14px;
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	border-radius: 90px;
+}
+.login-footer {
+	font-size: 10pt;
+	font-weight: 400;
+	text-align: center;
+	color: #b5a99d;
+	/*	position: fixed;
+	bottom: 0px;
+	left: 0px;*/
+	width: 100%;
+}
+a.btn-main {
+	padding: 10px 40px;
+	background: #a55339;
+	color: #fff;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: 400;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 1);
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	border-radius: 90px;
+}
+a.btn-main:hover {
+	padding: 10px 40px;
+	background: #7d3d29;
+	color: #fff;
+	text-align: center;
+	font-size: 10pt;
+	font-weight: 400;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 1);
+	-webkit-border-radius: 90px;
+	-moz-border-radius: 90px;
+	border-radius: 90px;
+}
+/*********Fancy Checkbox Css***********/
+/* The container */
+.check-box {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 10px;
+	line-height: 13px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.check-box a {
+	color: #888;
+}
+/* Hide the browser's default checkbox */
+.check-box input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 13px;
+	width: 13px;
+	border: 1px solid #a67856;
+	background-color: #eee;
+}
+/* On mouse-over, add a grey background color */
+.check-box :hover input ~ .checkmark {
+	background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+.check-box input:checked ~ .checkmark {
+	background-color: #a67856;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+.check-box input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+.check-box .checkmark:after {
+	left: 3.5px;
+	top: 0px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.form-tab .form-control {
+	border: 0px none;
+	border-bottom: 1px solid #a67856;
+	border-radius: 0px!important;
+	font-size: 13px;
+}
+.form-tab .form-control:focus {
+	border: 0px none;
+	border-bottom: 1px solid #a67856;
+	border-radius: 0px!important;
+	font-size: 13px;
+	outline: none;
+	-webkit-box-shadow: none!important;
+	-moz-box-shadow: none!important;
+	box-shadow: none!important;
+}
+/********** The radio button css **************/
+.radio-button {
+	display: block;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 5px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 14px;
+	color: #656565;
+	float: left;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default radio button */
+.radio-button input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom radio button */
+.radio-button .checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	background-color: #eee;
+	border-radius: 50%;
+	border: 1px solid #c6c6c6;
+}
+/* On mouse-over, add a grey background color */
+.radio-button:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+.radio-button input:checked ~ .checkmark {
+	background-color: #a55339;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+.radio-button input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the indicator (dot/circle) */
+.radio-button .checkmark:after {
+	top: 5px;
+	left: 5px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+/*********Footer Css***********/
+footer {
+	width: 100%;
+}
+.footer {
+	font-size: 13px;
+	font-weight: 400;
+	text-align: center;
+	color: #b5a99d;
+}
